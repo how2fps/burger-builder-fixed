@@ -12,7 +12,7 @@ const toolbar = (props) => {
       <MenuButton clickHandler={props.sideDrawerOpenHandler} />
       <Logo />
       <nav className={classes.DesktopOnly}>
-        <NavigationItems />
+        <NavigationItems isAuth={props.isAuth} />
       </nav>
     </header>
   );
